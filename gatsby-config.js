@@ -12,5 +12,12 @@ module.exports = {
         path: `${__dirname}/blog`,
       }
     },
+    "gatsby-plugin-mdx",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [`gatsby-remark-autolink-headers`],
+      },
+    },
   ],
 };
